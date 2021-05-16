@@ -121,6 +121,7 @@ footer a:hover {
 .card {
   position: relative;
 	padding: 45px;
+  padding-bottom: 40px;
   margin-top: 20px;
 	background-color: white;
 }
@@ -281,6 +282,7 @@ footer a:hover {
 
 #education .certification {
   display: inline-flex;
+  height: 8rem;
   padding: 15px;
   -webkit-box-shadow: 0 1px 4px 0 var(--color-light-off-white);
   -moz-box-shadow: 0 1px 4px 0 var(--color-light-off-white);
@@ -288,17 +290,16 @@ footer a:hover {
 }
 #education .certification .logo {
   width: 30%;
-  height: auto;
   background: white;
   overflow: hidden;
 }
 #education .certification .logo img {
   width: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
-  height: auto;
   object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
   opacity: 0.8;
   float: left;
 }
@@ -313,7 +314,6 @@ footer a:hover {
   display: none;
   font-size: 0.75rem;
 }
-
 
 
 
@@ -335,27 +335,16 @@ footer a:hover {
   -moz-box-shadow: 0 4px 10px 0 var(--color-light-off-white);
   box-shadow: 0 4px 10px 0 var(--color-light-off-white);
   font-weight: 600;
-  /* font-size: 17px; */
 }
 #skills .skill-title {
   padding-bottom: 10px;
 }
 #skills .tab-content {
   padding-top: 1.5rem;
+  min-height: 200px;
 }
 #skills .skills-chart-container {
   position: relative;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 360px !important;
-  height: 360px !important;
-}
-#skills #skills-chart {
-  position: absolute;
-  margin: 0 !important;
-  padding: 0 !important;
-  top: 0;
-  right: 1rem;
 }
 
 
@@ -410,6 +399,7 @@ footer a:hover {
 @media only all and (max-width: 400px) {
   .card {
     padding: 30px !important;
+    padding-bottom: 25px !important;
   }
   #experiences .timeline {
     padding: 0;
