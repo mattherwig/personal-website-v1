@@ -22,9 +22,9 @@ const ChartBackgroundColors = ['#b7aa9f', '#3b4048', '#ab9a93', '#3b4048', '#4d5
 
 $(document).ready(function () {
 	printWelcomeMessage()
+	updateStickyNavbar();
 	loadSkillsTable();
 	loadSkillsChart();
-	updateStickyNavbar();
 });
 
 $(document).scroll(function () {
@@ -38,11 +38,11 @@ $('#experiences .expander').click(function () {
 });
 
 $('#education .certification').hover(function () {
-	$(this).find('.detail .front').hide();
-	$(this).find('.detail .back').show();
+	$(this).find('.detail .subtitle').hide();
+	$(this).find('.detail .description').show();
 }, function () {
-	$(this).find('.detail .front').show();
-	$(this).find('.detail .back').hide();
+	$(this).find('.detail .subtitle').show();
+	$(this).find('.detail .description').hide();
 });
 
 $('#skills #skills-chart').mouseleave(function() {

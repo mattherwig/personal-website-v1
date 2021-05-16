@@ -37,7 +37,7 @@
     <img src="media/cover-photo.png" style="width: 100%" loading=lazy/>
     <div id="quick-detail-panel">
       <h3>Matt Herwig</h3>
-      <h4 class="subtitle">Developer &amp; Designer</h4>
+      <h4 class="subheader">Developer &amp; Designer</h4>
       <p>
         Hello! I am Matt Herwig, a developer, engineer and a visionary... well I hope so. I am a recent Lehigh University alum, bot enthusiast and need to get outside more. Programming is my passion and I try to become better every day.
       </p>
@@ -56,6 +56,7 @@
     </div>
   </section>
 
+  
   <section>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button class="navbar-toggler btn-full" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -281,10 +282,10 @@
       <div class="row">
         <div class="col-lg-7">
           <h5>Lehigh University</h5>
-          <h6 style="margin: 0">
-            Bachelor of Science, Computer Science &amp; Business
-          </h6>
-          <p>2016 - 2020</p>
+          <div class="subtitle">
+            <p>Bachelor of Science, Computer Science &amp; Business</p>
+            <p>2016 - 2020</p>
+          </div>
           <p class="mb-0">
             The
             <a href="https://csb.lehigh.edu/" target="_blank">Computer Science &amp; Business</a>
@@ -332,55 +333,40 @@
       </div>
       <div class="row">
         <div class="col-lg-12 pt-5">
-          <h5 class="skill-title">Certifications</h5>
+          <h5>Certifications</h5>
           <h6 style="margin: 0">
             Salesforce
           </h6>
         </div>
         <div class="col-lg-6">
           <div class="certification">
-            <div class="logo">
-              <img
-                class="filtered"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/512px-Salesforce.com_logo.svg.png"
-                loading=lazy
-                alt="" />
-            </div>
+            <img
+              class="logo"
+              src="https://sfdcfanboy.files.wordpress.com/2018/09/salesforce-certification-webinars-sfdcfanboy.png"
+              loading=lazy
+              alt="Salesforce Certification" />
             <div class="detail">
-              <div class="front">
-                <h5 class="title">
-                  Salesforce Certified Platform App Builder
-                </h5>
-                <div class="date">July 2020 - Present</div>
+              <div class="subtitle">
+                <p>Salesforce Certified Platform App Builder</p>
+                <p>July 2020 - Present</p>
               </div>
-              <div class="back">
-                <span class="description">Skills and
-                  knowledge to design, build, and implement custom
-                  applications using the declarative customization
-                  capabilities of the Salesforce Platform.</span>
-              </div>
+              <div class="description">Skills and knowledge to design, build, and implement custom applications using the declarative customization capabilities of the Salesforce Platform.</div>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="certification">
-            <div class="logo">
-              <img
-                class="filtered"
+            <img
+                class="logo"
                 loading=lazy
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/512px-Salesforce.com_logo.svg.png"
-                alt="" />
-            </div>
+                src="https://sfdcfanboy.files.wordpress.com/2018/09/salesforce-certification-webinars-sfdcfanboy.png"
+                alt="Salesforce Certification" />
             <div class="detail">
-              <div class="front">
-                <h5 class="title">
-                  Salesforce Certified Platform Developer 1
-                </h5>
-                <div class="date">July 2020 - Present</div>
+              <div class="subtitle">
+                <p>Salesforce Certified Platform Developer 1</p>
+                <p>July 2020 - Present</p>
               </div>
-              <div class="back">
-                <span class="description">Understand how to develop custom business logic and custom interfaces using the programmatic capabilities of the Lightning Platform. They can extend the Lightning Platform using Apex and Visualforce.</span>
-              </div>
+              <div class="description">Understand how to develop custom business logic and custom interfaces using the programmatic capabilities of the Lightning Platform. They can extend the Lightning Platform using Apex and Visualforce.</span>
             </div>
           </div>
         </div>
@@ -527,7 +513,7 @@
   
   <script src="js/chartjs-plugin-doughnutlabel.js"></script>
   <script src="js/skills.js" type="text/javascript"></script>
-  <script src="js/index.js" type="text/javascript"></script>
+  <script src="js/index.js" type="text/javascript" defer></script>
 </body>
 
 </html>

@@ -113,6 +113,12 @@ footer a:hover {
   background: linear-gradient(to bottom,  #3B4048CC 0%,var(--primary-color) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B4048CC', endColorstr='var(--primary-color)',GradientType=0 );
 }
+#quick-detail .subheader {
+  font-family: 'Montserrat-Medium', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: -9px;
+}
+
 #about {
   display: none;
 }
@@ -151,18 +157,7 @@ footer a:hover {
 	padding-right: 30px;
 	padding-top: -30px;
 }
-.subtitle {
-  font-family: 'Montserrat-Medium', sans-serif;
-  margin-bottom: 1rem;
-  margin-top: -9px;
-}
-.center-subtitle {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
 .section-title {
-  /*text-align: center;*/
   padding-bottom: 50px;
 }
 .icon {
@@ -193,6 +188,17 @@ footer a:hover {
   width: 100%;
   grid-column: 1;
   grid-row: 1;
+}
+.subtitle > p {
+  font-size: 0.95rem;
+  margin: 0;
+  padding: 0;
+}
+.subtitle > p:first-child {
+  font-size: 1rem;
+}
+.subtitle > p:last-child {
+  padding-bottom: 1rem;
 }
 
 #experiences .timeline {
@@ -281,7 +287,7 @@ footer a:hover {
 
 
 #education .certification {
-  display: inline-flex;
+  display: flex;
   height: 8rem;
   padding: 15px;
   -webkit-box-shadow: 0 1px 4px 0 var(--color-light-off-white);
@@ -289,13 +295,12 @@ footer a:hover {
   box-shadow: 0 1px 4px 0 var(--color-light-off-white);
 }
 #education .certification .logo {
-  width: 30%;
-  background: white;
-  overflow: hidden;
+  width: 8rem;
+  margin-right: 2rem;
 }
-#education .certification .logo img {
-  width: 100%;
-  height: auto;
+#education .certification img.logo {
+  height: 6rem;
+  width: auto;
   padding: 0;
   margin: 0;
   object-fit: cover;
@@ -304,13 +309,15 @@ footer a:hover {
   float: left;
 }
 #education .certification .detail {
-  padding-left: 20px;
-  width: 80%;
+  flex-grow: 2;
+  float: right;
+  text-align: right;
 }
 #education .certification .detail .title {
   margin: 0;
+  font-weight: bold;
 }
-#education .certification .detail .back {
+#education .certification .detail .description {
   display: none;
   font-size: 0.75rem;
 }
@@ -335,9 +342,6 @@ footer a:hover {
   -moz-box-shadow: 0 4px 10px 0 var(--color-light-off-white);
   box-shadow: 0 4px 10px 0 var(--color-light-off-white);
   font-weight: 600;
-}
-#skills .skill-title {
-  padding-bottom: 10px;
 }
 #skills .tab-content {
   padding-top: 1.5rem;
